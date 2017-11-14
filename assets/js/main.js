@@ -254,9 +254,9 @@
                     });
 
             // EXIF data					
-            EXIF.getData($image_img[0], function () {
-                exifDatas[$image_img.data('name')] = getExifDataMarkup(this);
-            });
+            //EXIF.getData($image_img[0], function () {
+            //    exifDatas[$image_img.data('name')] = getExifDataMarkup(this);
+            //});
 
         });
 
@@ -264,7 +264,8 @@
         $main.poptrox({
             baseZIndex: 20000,
             caption: function ($a) {
-                var $image_img = $a.children('img');
+                return ' ';
+            /*  var $image_img = $a.children('img');
                 var data = exifDatas[$image_img.data('name')];
                 if (data === undefined) {
                     // EXIF data					
@@ -273,6 +274,7 @@
                     });
                 }
                 return data !== undefined ? '<p>' + data + '</p>' : ' ';
+            */
             },
             fadeSpeed: 300,
             onPopupClose: function () {
