@@ -1,5 +1,5 @@
 # Base configs
-baseurl: "http://photography.portertech.ca"
+baseurl: "http://photography.seanporter.ca"
 image_fulls_loc: "/images/fulls"
 image_thumbs_loc: "/images/thumbs"
 
